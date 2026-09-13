@@ -2,6 +2,7 @@
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue?style=for-the-badge&logo=python&logoColor=white)
 ![RL](https://img.shields.io/badge/Reinforcement%20Learning-Deep%20RL%20%26%20Function%20Approximation-0052CC?style=for-the-badge)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 This repository transitions from tabular Reinforcement Learning to continuous state spaces using Function Approximation. It covers both linear value prediction and non-linear Deep Q-Networks (DQN).
 
@@ -23,9 +24,9 @@ The project is divided into two major components:
 
 ---
 
-## 📊 Visualizations & Convergence Results
+## 📊 Visualizations & Recorded Runs
 
-The outputs demonstrate the learned value functions under linear approximation and the learning curves (reward per episode) of the DQN agent.
+The outputs show learned value estimates and reward curves from seeded runs. The CartPole experiment uses 300 episodes, while each ablation uses 50 episodes. These curves illustrate training behavior and are not multi-seed convergence estimates.
 
 ### Sample Outputs
 <p align="center">
@@ -46,3 +47,9 @@ cd Function_Approximation_and_DQN_RL
 pip install -r requirements.txt
 jupyter lab
 ```
+
+Open `function_approx_and_dqn.ipynb` and run the cells in order. The environments are generated locally; no dataset or pretrained model is required.
+
+## License
+
+Released under the [MIT License](LICENSE).
